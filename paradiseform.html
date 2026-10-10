@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise form</title>
+</head>
+<body>
+    <h1>Schedule Your Holiday on Paradise Island</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Info</legend>
+        <label for="Name">Full Name:</label>
+        <input type="text>" id="Name" name="Fullname" required>
+        <br><br>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" Name="email" placeholder="xyz@abc.com">
+        <br><br>
+        <input type="submit">
+        <br><br>
+        <label for="number">Phone Number:</label>
+        <input type="tel" id="number" name="PhoneNumber">
+        <br><br>
+        <label for="date">Date of Birth</label>
+        <input type="date" id="date" name="Date of Birth" min="2021-01-01" max="2027-12-31">
+        <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Date and Time</legend>
+            <label for="arrival">Arrival Date</label>
+            <input type="datetime-local" id="arrival" name="Arrival Date">
+        <br><br>
+        <label for="departure">Departure Date </label>
+        <input type="datetime-local" id="departure" name="Departure Date">
+        <br><br>
+        <label for="travellers">No. of travellers</label>
+        <input type="number" id="travellers" name="Traveller number">
+        <fieldset>
+            <legend>Preferred Activities</legend>
+        <input type="checkbox" id="snork" name="Activity" value="snorkelling">
+        <label for="snork">Snorkelling</label>
+        <br><br>
+        <input type="checkbox" id="hike" name="Activity" value="hiking" checked>
+        <label for="hike">Hiking</label>
+        <br><br>
+        <input type="checkbox" id="sp" name="Activity" value="spa">
+        <label for="sp">Spa</label>
+        </fieldset>
+        <p><b>Baby on Board?</b></p>
+        <label for="babe">Yes</label>
+        <input type="radio" name="baby" value="yes" id="babe">
+        <label for="nope">No</label>
+        <input type="radio" name="baby" value="no" id="nope">
+        <p><b>Special Requests</b></p>
+        <textarea cols="40" rows="40">
+
+        </textarea>
+        </fieldset>
+        
+        <label for="Acco">Accommodation Preferences</label>
+        <select id="Acco" name="Accommodation" multiple>
+            <optgroup label="Hotels">
+            <option value="3-star">3-star</option>
+            <option value="4-star">4-star</option>
+            <option value="5-star">5-star</option>
+        
+        </optgroup>
+        <optgroup label="Guest House">
+            <option value="2-bedroom">2-bedroom</option>
+            <option value="3-bedroom"></option>
+        
+        </optgroup>
+            <option value="cottage">Cottage</option>
+            <option value="bungalow" selected>Bungalow</option>
+
+        </select>
+    </form>
+</body>
+</html>
